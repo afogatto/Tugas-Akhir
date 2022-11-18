@@ -106,7 +106,7 @@ header .intro{
     top: 50%;
 }
 
-header .intro h3{
+header .intro h2{
     font-size: 50px;
     margin: 0;
     padding: 0;
@@ -211,7 +211,6 @@ section.abuabu{
 .pendukung,
 .tim,
 .persiapan{
-   
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -232,13 +231,12 @@ section.abuabu{
 }
 
 .div,
-.tim div,
-.favorit div{
+.tim div{
     text-align: center;
     width: 26%;
 }
 
-section#favorit{
+.favorit{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     flex-direction: row;
@@ -247,19 +245,24 @@ section#favorit{
     padding: 10px 0px 10px 0px;
 }
 
-section#favorit div{
+.favorit div{
     padding: 10px;
+    margin: auto;
 }
 
-section#favorit div img{
+.favorit div img{
     height: 170px;
     border-radius: 5px;
     object-fit: cover;
 }
 
-section#favorit div img:hover{
+.favorit div img:hover{
     transition: all 0.2s ease-in-out;
     transform: scale(1.1);
+}
+
+.favorit h6{
+    text-align: center;
 }
 
 section.tagline{
@@ -360,11 +363,11 @@ footer .layar-dalam i{
 
 footer .layar-dalam a{
     color: #fff;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 footer .layar-dalam p{
-    font-size: 12px;
+    font-size: 11px;
 }
 
 footer .layar-dalam .copyright{
@@ -420,7 +423,7 @@ footer .layar-dalam .copyright p{
         width: 100%;
         padding-bottom: 30px;
     }
-    section#favorit{
+    .favorit{
         display: grid;
         grid-template-columns: repeat(2,1fr)
     }
