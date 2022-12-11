@@ -43,7 +43,7 @@ nav .logo{
 
 nav .logo img{
     vertical-align: left;
-    width: 120px;
+    width: 150px;
 }
 
 .btn{
@@ -75,6 +75,7 @@ nav .logo img{
 }
 
 .meal-search{
+    padding: 50px;
     margin: 2rem 0;
 }
 
@@ -93,8 +94,11 @@ nav .logo img{
     width: 100%;
 }
 
+
 .search-control{
-    padding: 0 1rem;
+    width: 50%;
+    margin-left: 150px;
+    padding:  0.5rem;
     font-size: 1.1rem;
     font-family: inherit;
     outline: 0;
@@ -107,11 +111,14 @@ nav .logo img{
 .search-control::placeholder{
     color: var(--tenne-tawny);
 }
-
+form{
+    display: flex;
+    
+}
 .search-btn{
-    width: 55px;
-    height: 55px;
-    font-size: 1.8rem;
+    width: 50px;
+    height: 45px;
+    /* font-size: 1.8rem; */
     background: var(--tenne-tawny);
     color: var(--putih);
     border: none;
@@ -129,7 +136,7 @@ nav .logo img{
 }
 
 .meal-result{
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
 
 #meal{
@@ -189,7 +196,7 @@ nav .logo img{
 /* meal details */
 .meal-details{
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -204,7 +211,7 @@ nav .logo img{
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
     width: 90%;
-    height: 90%;
+    height: 78%;
     overflow-y: scroll;
     display: none;
     padding: 2rem 0;
@@ -347,6 +354,17 @@ nav .logo img{
     z-index: 100;
     display: none;
 }
+.copyright{
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #666;
+    text-align: center;
+}
+
+.copyright p{
+    font-size: 10px;
+}
 
 
 /* Media Queries */
@@ -356,7 +374,6 @@ nav .logo img{
         margin-left: auto;
         margin-right: auto;
     }
-
     #meal{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -397,6 +414,13 @@ nav .logo img{
         height: 25px;
         right: 18px;
     }
+    
+    .search-control{
+        width: 150px;
+    }
+    .search-control{
+        margin-left: 0px;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -405,6 +429,7 @@ nav .logo img{
         margin-left: auto;
         margin-right: auto;
     }
+    
     #meal{
         display: grid;
         grid-template-columns: repeat(3, 1fr);

@@ -1,22 +1,24 @@
 // const loader = document.getElementById('preloader');
-const searchBtn = document.getElementById('search-btn');
+// const searchBtn = document.getElementById('search-btn');
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
 
 // loader.addEventListener('load')
-searchBtn.addEventListener('click', getMealList);
+// searchBtn.addEventListener('click', getMealList);
 mealList.addEventListener('click', ambilResep);
 recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
 
-function getMealList(){
+function getMealList(e){
+    e.preventDefault()
+    console.log(e.target.cari.value)
     document.getElementById('preloader').style.display ='block'
     setTimeout(getData,1000);
     function getData(){
         document.getElementById('preloader').style.display ='none'
-    let searchInputTxt = document.getElementById('search-input').value.trim();
+    let searchInputTxt = e.target.cari.value
     console.log(searchInputTxt)
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
 
