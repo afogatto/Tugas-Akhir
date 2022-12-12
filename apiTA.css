@@ -343,7 +343,6 @@ form{
 .instruction{
     text-align: left;
 }
-/*  */
 
 #preloader{
     background: url(assets/loading.gif) no-repeat center;
@@ -354,18 +353,6 @@ form{
     z-index: 100;
     display: none;
 }
-.copyright{
-    width: 100%;
-    margin-top: 30px;
-    padding-top: 30px;
-    border-top: 1px solid #666;
-    text-align: center;
-}
-
-.copyright p{
-    font-size: 10px;
-}
-
 
 /* Media Queries */
 @media screen and (max-width: 480px){
@@ -414,9 +401,8 @@ form{
         height: 25px;
         right: 18px;
     }
-    
     .search-control{
-        width: 150px;
+        width: 175px;
     }
     .search-control{
         margin-left: 0px;
@@ -429,7 +415,6 @@ form{
         margin-left: auto;
         margin-right: auto;
     }
-    
     #meal{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -440,6 +425,11 @@ form{
     }
     .meal-details{
         width: 700px;
+    }.search-control{
+        width: 500px;
+    }
+    .search-control{
+        margin-left: 0px;
     }
 }
 
